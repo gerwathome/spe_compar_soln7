@@ -1,0 +1,482 @@
+**********************************************************************
+*                                                                    *
+*                   This is Flow (version 2016.10-pre)               *
+*                                                                    *
+* Flow is a simulator for fully implicit three-phase black-oil flow, *
+*            and is part of OPM. For more information see:           *
+*                       http://opm-project.org                       *
+*                                                                    *
+**********************************************************************
+
+---------------    Reading parameters     ---------------
+output not found. Using default value 'true'.
+output_dir found at /, value is './sim_output/SPE7CASE1A'.
+deck_filename found at /, value is ./sim_decks/SPE7CASE1A.DATA
+gravity not found. Using default value '9.80665'.
+use_local_perm not found. Using default value 'true'.
+
+
+***************Saturation Functions Diagnostics***************
+
+System:  Black-oil system.
+Relative permeability input format: Saturation Family I.
+Number of saturation regions: 1
+
+
+
+Error summary:
+Warnings          0
+Problems          0
+Errors            0
+Bugs              0
+
+threephase_model not found. Using default value 'gwseg'.
+output not found. Using default value 'true'.
+output_dir found at /, value is './sim_output/SPE7CASE1A'.
+output_interval not found. Using default value '1'.
+output_vtk not found. Using default value 'false'.
+output_matlab not found. Using default value 'false'.
+output_ecl not found. Using default value 'true'.
+async_output not found. Using default value 'false'.
+backupfile not found. Using default value ''.
+newton_use_gmres not found. Using default value 'false'.
+linear_solver_reduction not found. Using default value '0.01'.
+linear_solver_maxiter not found. Using default value '75'.
+linear_solver_restart not found. Using default value '40'.
+linear_solver_verbosity not found. Using default value '0'.
+dp_max_rel not found. Using default value '1e+09'.
+ds_max not found. Using default value '0.2'.
+dr_max_rel not found. Using default value '1e+09'.
+max_residual_allowed not found. Using default value '1e+07'.
+tolerance_mb not found. Using default value '1e-05'.
+tolerance_cnv not found. Using default value '0.01'.
+tolerance_wells not found. Using default value '0.001'.
+solve_welleq_initially not found. Using default value 'true'.
+update_equations_scaling not found. Using default value 'false'.
+compute_well_potentials not found. Using default value 'false'.
+relax_max not found. Using default value '0.5'.
+max_iter not found. Using default value '15'.
+min_iter not found. Using default value '1'.
+relax_type not found. Using default value 'dampen'.
+output_terminal not found. Using default value 'true'.
+
+
+================ Starting main simulation loop ===============
+timestep.adaptive not found. Using default value 'true'.
+solver.restartfactor not found. Using default value '0.33'.
+solver.growthfactor not found. Using default value '2'.
+timestep.control.maxgrowth not found. Using default value '3'.
+timestep.max_timestep_in_days not found. Using default value '365'.
+solver.restart not found. Using default value '10'.
+solver.verbose not found. Using default value 'true'.
+timestep.verbose not found. Using default value 'true'.
+full_timestep_initially not found. Using default value 'false'.
+timestep.control not found. Using default value 'pid'.
+timestep.control.tol not found. Using default value '0.1'.
+restorefile not found. Using default value ''.
+compute_well_potentials not found. Using default value 'false'.
+
+
+---------------    Simulation step number 0    ---------------
+      Current time (days)     0
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+Substep( 0 ), try with stepsize 33 (days).
+
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  8.092e-02  4.487e-03  8.591e-03
+   1  5.303e-19  6.262e-17  5.078e-17
+well converged iter: 1
+
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  3.860e-02  2.595e-03  2.100e-03  5.565e+00  2.803e+00  2.268e+00  8.625e-03  6.262e-17  5.078e-17
+   1  5.674e-04  1.508e-03  1.203e-03  2.063e-01  3.755e-01  2.981e-01  2.112e-05  2.722e-05  2.169e-05
+   2  8.063e-06  1.018e-04  8.074e-05  1.005e-02  7.244e-02  5.743e-02  2.485e-05  2.154e-04  1.708e-04
+   3  5.880e-07  9.017e-07  7.151e-07  2.079e-04  9.887e-04  7.857e-04  9.112e-08  7.890e-07  6.239e-07
+Overall linear iterations used: 20
+Substep( 0 ) finished at time 33 (days).
+
+Substep( 1 ), try with stepsize 67 (days).
+
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  7.056e-07  7.890e-07  6.239e-07
+well converged iter: 0
+
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  6.652e-03  5.016e-03  3.978e-03  1.518e-01  1.500e-01  1.195e-01  7.057e-07  7.890e-07  6.239e-07
+   1  1.823e-04  4.004e-04  3.177e-04  5.792e-02  5.622e-01  4.456e-01  2.121e-04  4.583e-04  3.633e-04
+   2  8.047e-06  4.331e-05  3.432e-05  2.087e-02  5.430e-01  4.307e-01  2.894e-07  1.007e-06  8.076e-07
+   3  1.181e-05  2.483e-05  1.969e-05  4.841e-03  1.889e-02  1.500e-02  2.211e-08  7.672e-08  6.053e-08
+   4  3.662e-07  6.935e-07  5.500e-07  1.078e-05  5.769e-05  4.581e-05  1.158e-09  4.026e-09  3.189e-09
+Overall linear iterations used: 19
+Substep( 1 ) finished at time 100 (days).
+
+Sub steps started at time = 0 (days)
+ step[ 0 ] = 33 (days)
+ step[ 1 ] = 67 (days)
+sub steps end time = 100 (days)
+Suggested next step size = 201 (days)
+Fully implicit solver took: 0.065051 seconds. Total solver time taken: 0.065051 seconds.
+
+
+---------------    Simulation step number 1    ---------------
+      Current time (days)     100
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+Substep( 0 ), try with stepsize 100 (days).
+
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  1.158e-09  4.026e-09  3.189e-09
+well converged iter: 0
+
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  6.486e-03  6.411e-03  5.079e-03  1.164e-01  1.164e-01  9.236e-02  1.158e-09  4.026e-09  3.189e-09
+   1  1.899e-04  7.358e-04  5.836e-04  6.767e-02  2.466e+00  1.955e+00  1.582e-04  5.500e-04  4.360e-04
+   2  2.464e-05  2.998e-05  2.376e-05  3.187e-02  1.663e-01  1.320e-01  1.494e-06  5.213e-06  4.142e-06
+ Oscillating behavior detected: Relaxation set to 0.9
+   3  9.352e-06  1.348e-05  1.069e-05  3.235e-03  2.158e-02  1.712e-02  1.454e-07  5.075e-07  4.033e-07
+   4  9.333e-07  1.386e-06  1.099e-06  3.265e-04  2.241e-03  1.778e-03  1.431e-08  4.992e-08  3.968e-08
+Overall linear iterations used: 16
+Substep( 0 ) finished at time 200 (days).
+
+Sub steps started at time = 100 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 200 (days)
+Suggested next step size = 300 (days)
+Fully implicit solver took: 0.028372 seconds. Total solver time taken: 0.093423 seconds.
+
+
+---------------    Simulation step number 2    ---------------
+      Current time (days)     200
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+Substep( 0 ), try with stepsize 100 (days).
+
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  1.431e-08  4.992e-08  3.968e-08
+well converged iter: 0
+
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  5.051e-03  5.049e-03  4.001e-03  7.141e-02  7.145e-02  5.671e-02  1.431e-08  4.992e-08  3.968e-08
+   1  5.960e-05  2.472e-04  1.962e-04  2.440e-02  1.857e-01  1.471e-01  5.619e-05  1.651e-04  1.309e-04
+   2  1.638e-05  6.414e-05  5.083e-05  8.418e-03  2.816e-01  2.232e-01  2.470e-06  6.653e-05  5.273e-05
+   3  3.296e-07  2.572e-06  2.039e-06  7.620e-04  2.612e-03  2.070e-03  1.733e-07  6.028e-07  4.778e-07
+Overall linear iterations used: 11
+Substep( 0 ) finished at time 300 (days).
+
+Sub steps started at time = 200 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 300 (days)
+Suggested next step size = 300 (days)
+Fully implicit solver took: 0.021387 seconds. Total solver time taken: 0.11481 seconds.
+
+
+---------------    Simulation step number 3    ---------------
+      Current time (days)     300
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+Substep( 0 ), try with stepsize 100 (days).
+
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  1.733e-07  6.028e-07  4.778e-07
+well converged iter: 0
+
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  4.068e-03  4.073e-03  3.227e-03  4.668e-02  4.672e-02  3.702e-02  1.733e-07  6.028e-07  4.778e-07
+   1  2.430e-05  1.426e-04  1.129e-04  3.022e-02  6.550e-01  5.192e-01  2.847e-05  1.278e-04  1.012e-04
+   2  2.370e-05  1.353e-05  1.073e-05  2.768e-02  1.751e-02  1.388e-02  6.446e-06  3.926e-06  3.112e-06
+   3  7.242e-07  4.173e-07  4.266e-07  2.041e-05  5.356e-05  3.523e-04  1.106e-09  1.631e-08  7.431e-08
+Overall linear iterations used: 10
+Substep( 0 ) finished at time 400 (days).
+
+Sub steps started at time = 300 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 400 (days)
+Suggested next step size = 300 (days)
+Fully implicit solver took: 0.020144 seconds. Total solver time taken: 0.134954 seconds.
+
+
+---------------    Simulation step number 4    ---------------
+      Current time (days)     400
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+Substep( 0 ), try with stepsize 100 (days).
+
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  1.106e-09  1.589e-08  7.397e-08
+well converged iter: 0
+
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  3.407e-03  3.408e-03  2.701e-03  3.474e-02  3.477e-02  2.755e-02  1.106e-09  1.589e-08  7.397e-08
+   1  1.541e-05  1.002e-05  7.304e-06  2.628e-02  9.201e-02  7.292e-02  1.907e-06  2.392e-05  1.860e-05
+   2  3.359e-06  4.850e-06  3.845e-06  3.723e-04  3.159e-04  2.506e-04  1.238e-07  6.349e-08  5.080e-08
+Overall linear iterations used: 8
+Substep( 0 ) finished at time 500 (days).
+
+Sub steps started at time = 400 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 500 (days)
+Suggested next step size = 300 (days)
+Fully implicit solver took: 0.014366 seconds. Total solver time taken: 0.14932 seconds.
+
+
+---------------    Simulation step number 5    ---------------
+      Current time (days)     500
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+Substep( 0 ), try with stepsize 100 (days).
+
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  1.238e-07  6.349e-08  5.080e-08
+well converged iter: 0
+
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  2.951e-03  2.945e-03  2.334e-03  2.730e-02  2.735e-02  2.167e-02  1.238e-07  6.349e-08  5.080e-08
+   1  1.782e-05  1.352e-05  1.077e-05  1.921e-02  1.971e-02  1.562e-02  6.025e-06  4.062e-06  3.217e-06
+   2  2.366e-06  2.017e-06  1.599e-06  1.022e-04  9.132e-05  7.241e-05  2.484e-10  6.829e-11  5.204e-11
+Overall linear iterations used: 8
+Substep( 0 ) finished at time 600 (days).
+
+Sub steps started at time = 500 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 600 (days)
+Suggested next step size = 300 (days)
+Fully implicit solver took: 0.014537 seconds. Total solver time taken: 0.163857 seconds.
+
+
+---------------    Simulation step number 6    ---------------
+      Current time (days)     600
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+Substep( 0 ), try with stepsize 100 (days).
+
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  2.484e-10  6.829e-11  5.204e-11
+well converged iter: 0
+
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  2.627e-03  2.625e-03  2.080e-03  2.418e-02  2.420e-02  1.918e-02  2.484e-10  6.829e-11  5.204e-11
+   1  1.241e-05  9.803e-06  7.811e-06  1.873e-02  1.603e-01  1.270e-01  3.668e-06  2.477e-06  1.961e-06
+   2  5.304e-06  5.797e-06  4.608e-06  2.409e-03  1.552e-03  1.264e-03  3.727e-08  2.161e-08  1.031e-08
+Overall linear iterations used: 7
+Substep( 0 ) finished at time 700 (days).
+
+Sub steps started at time = 600 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 700 (days)
+Suggested next step size = 300 (days)
+Fully implicit solver took: 0.014194 seconds. Total solver time taken: 0.178051 seconds.
+
+
+---------------    Simulation step number 7    ---------------
+      Current time (days)     700
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+Substep( 0 ), try with stepsize 100 (days).
+
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  3.727e-08  2.199e-08  1.061e-08
+well converged iter: 0
+
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  2.393e-03  2.384e-03  1.889e-03  2.111e-02  2.105e-02  1.668e-02  3.727e-08  2.199e-08  1.061e-08
+   1  1.764e-05  1.352e-05  1.077e-05  5.595e-03  5.612e-03  4.448e-03  2.297e-06  1.560e-06  1.223e-06
+   2  1.020e-07  1.470e-07  1.165e-07  1.387e-05  1.888e-05  1.497e-05  5.359e-11  1.616e-11  1.756e-11
+Overall linear iterations used: 7
+Substep( 0 ) finished at time 800 (days).
+
+Sub steps started at time = 700 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 800 (days)
+Suggested next step size = 300 (days)
+Fully implicit solver took: 0.014274 seconds. Total solver time taken: 0.192325 seconds.
+
+
+---------------    Simulation step number 8    ---------------
+      Current time (days)     800
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+Substep( 0 ), try with stepsize 100 (days).
+
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  5.359e-11  1.616e-11  1.756e-11
+well converged iter: 0
+
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  2.187e-03  2.188e-03  1.734e-03  1.801e-02  1.802e-02  1.429e-02  5.359e-11  1.616e-11  1.756e-11
+   1  1.131e-05  8.324e-06  6.628e-06  6.561e-03  5.831e-02  4.620e-02  1.636e-06  1.115e-06  8.819e-07
+   2  9.780e-07  1.863e-07  1.258e-07  3.146e-04  1.933e-04  1.531e-04  5.655e-09  5.095e-10  1.393e-08
+Overall linear iterations used: 7
+Substep( 0 ) finished at time 900 (days).
+
+Sub steps started at time = 800 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 900 (days)
+Suggested next step size = 300 (days)
+Fully implicit solver took: 0.01409 seconds. Total solver time taken: 0.206415 seconds.
+
+
+---------------    Simulation step number 9    ---------------
+      Current time (days)     900
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+Substep( 0 ), try with stepsize 100 (days).
+
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  5.655e-09  5.095e-10  1.393e-08
+well converged iter: 0
+
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  2.026e-03  2.029e-03  1.608e-03  1.526e-02  1.527e-02  1.210e-02  5.655e-09  5.095e-10  1.393e-08
+   1  1.308e-05  5.084e-06  4.057e-06  3.620e-03  2.605e-03  2.063e-03  1.099e-06  7.542e-07  5.951e-07
+   2  7.472e-08  6.330e-07  5.018e-07  3.312e-05  2.095e-05  1.658e-05  5.821e-11  4.236e-11  3.337e-11
+Overall linear iterations used: 7
+Substep( 0 ) finished at time 1000 (days).
+
+Sub steps started at time = 900 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 1000 (days)
+Suggested next step size = 300 (days)
+Fully implicit solver took: 0.014006 seconds. Total solver time taken: 0.220421 seconds.
+
+
+---------------    Simulation step number 10    ---------------
+      Current time (days)     1000
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+Substep( 0 ), try with stepsize 100 (days).
+
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  5.821e-11  4.236e-11  3.337e-11
+well converged iter: 0
+
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  1.896e-03  1.897e-03  1.503e-03  1.337e-02  1.338e-02  1.061e-02  5.821e-11  4.236e-11  3.337e-11
+   1  1.329e-05  5.421e-06  4.320e-06  2.092e-03  5.853e-04  4.638e-04  8.436e-07  5.786e-07  4.568e-07
+   2  6.282e-09  3.589e-08  2.845e-08  2.335e-06  1.805e-06  1.429e-06  8.877e-12  5.047e-12  4.192e-12
+Overall linear iterations used: 9
+Substep( 0 ) finished at time 1100 (days).
+
+Sub steps started at time = 1000 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 1100 (days)
+Suggested next step size = 300 (days)
+Fully implicit solver took: 0.014337 seconds. Total solver time taken: 0.234758 seconds.
+
+
+---------------    Simulation step number 11    ---------------
+      Current time (days)     1100
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+Substep( 0 ), try with stepsize 100 (days).
+
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  8.877e-12  5.047e-12  4.192e-12
+well converged iter: 0
+
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  1.781e-03  1.782e-03  1.412e-03  1.224e-02  1.226e-02  9.715e-03  8.877e-12  5.047e-12  4.192e-12
+   1  1.191e-05  4.553e-06  3.628e-06  2.101e-03  3.728e-03  2.953e-03  6.583e-07  4.511e-07  3.562e-07
+   2  1.489e-09  1.911e-07  1.515e-07  1.841e-05  1.186e-05  9.391e-06  4.523e-10  3.061e-10  2.419e-10
+Overall linear iterations used: 8
+Substep( 0 ) finished at time 1200 (days).
+
+Sub steps started at time = 1100 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 1200 (days)
+Suggested next step size = 300 (days)
+Fully implicit solver took: 0.014103 seconds. Total solver time taken: 0.248861 seconds.
+
+
+---------------    Simulation step number 12    ---------------
+      Current time (days)     1200
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+Substep( 0 ), try with stepsize 100 (days).
+
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  4.523e-10  3.061e-10  2.419e-10
+well converged iter: 0
+
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  1.682e-03  1.683e-03  1.334e-03  1.129e-02  1.130e-02  8.959e-03  4.523e-10  3.061e-10  2.419e-10
+   1  1.136e-05  4.272e-06  3.403e-06  2.141e-03  1.068e-03  8.470e-04  4.974e-07  3.407e-07  2.690e-07
+   2  1.028e-07  1.985e-07  1.574e-07  5.418e-06  9.407e-06  7.446e-06  6.644e-12  4.610e-12  3.890e-12
+Overall linear iterations used: 8
+Substep( 0 ) finished at time 1300 (days).
+
+Sub steps started at time = 1200 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 1300 (days)
+Suggested next step size = 300 (days)
+Fully implicit solver took: 0.014452 seconds. Total solver time taken: 0.263313 seconds.
+
+
+---------------    Simulation step number 13    ---------------
+      Current time (days)     1300
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+Substep( 0 ), try with stepsize 100 (days).
+
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  6.644e-12  4.610e-12  3.890e-12
+well converged iter: 0
+
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  1.596e-03  1.597e-03  1.265e-03  1.026e-02  1.027e-02  8.137e-03  6.644e-12  4.610e-12  3.890e-12
+   1  1.017e-05  3.657e-06  2.913e-06  2.336e-03  8.534e-04  6.783e-04  3.950e-07  3.779e-07  2.987e-07
+   2  7.779e-08  1.221e-08  9.679e-09  1.884e-05  5.432e-06  4.300e-06  5.545e-12  2.935e-12  2.082e-12
+Overall linear iterations used: 8
+Substep( 0 ) finished at time 1400 (days).
+
+Sub steps started at time = 1300 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 1400 (days)
+Suggested next step size = 300 (days)
+Fully implicit solver took: 0.014234 seconds. Total solver time taken: 0.277547 seconds.
+
+
+---------------    Simulation step number 14    ---------------
+      Current time (days)     1400
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+Substep( 0 ), try with stepsize 100 (days).
+
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  5.545e-12  2.935e-12  2.082e-12
+well converged iter: 0
+
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  1.519e-03  1.521e-03  1.205e-03  8.991e-03  8.999e-03  7.133e-03  5.545e-12  2.935e-12  2.082e-12
+   1  9.699e-06  3.357e-06  2.674e-06  1.953e-03  8.376e-04  6.652e-04  3.236e-07  2.231e-07  1.761e-07
+Overall linear iterations used: 2
+Substep( 0 ) finished at time 1500 (days).
+
+Sub steps started at time = 1400 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 1500 (days)
+Suggested next step size = 300 (days)
+Fully implicit solver took: 0.008976 seconds. Total solver time taken: 0.286523 seconds.
+
+
+================    End of simulation     ===============
+
+Total time taken (seconds):  0.292909
+Solver time (seconds):       0.286523
+Overall Newton Iterations:   38
+Overall Linear Iterations:   155

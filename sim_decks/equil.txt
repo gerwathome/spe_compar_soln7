@@ -1,0 +1,25 @@
+-- DD = Datum Depth
+-- P(DD) = pressure at datum depth
+-- OWC = oil-water contact
+-- Pcow(OWC) = Pc at OWC
+-- GOC = gas-oil contact
+-- Pcog(GOC) = Pc at GOC
+-- RsPbpvsD = postive integer indicates a depth vs Rs table
+-- RnPdvsD = postive integer indicates a depth vs Rs table
+-- Nacc = integer indicates OOIP method (only 0 for flow)
+EQUIL
+-- 1    2    3    4        5    6         7         8     9 
+-- DD  P(DD) OWC  Pcow(OWC) GOC  Pcog(GOC) RsPbpvsD RnPdvsD Nacc
+  3600 3600  3725   0       3550   0          1        0     0 /
+
+
+PBVD
+-- Depth   Pbp
+--  ft     psia
+   3600    3600
+   3620    3608
+   3640    3616
+   3660    3623
+   3685    3633
+   3725    3650 /
+

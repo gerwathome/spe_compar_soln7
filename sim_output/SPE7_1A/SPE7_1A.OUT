@@ -1,0 +1,131 @@
+**********************************************************************
+*                                                                    *
+*                   This is Flow (version 2016.10)                   *
+*                                                                    *
+* Flow is a simulator for fully implicit three-phase black-oil flow, *
+*            and is part of OPM. For more information see:           *
+*                       http://opm-project.org                       *
+*                                                                    *
+**********************************************************************
+
+IOConfig: Reading GRIDFILE keyword from GRID section: Output of GRID file is not supported. Supported format: EGRID
+
+***************Saturation Functions Diagnostics***************
+System:  Black-oil system.
+Relative permeability input format: Saturation Family I.
+Number of saturation regions: 1
+
+
+
+================ Starting main simulation loop ===============
+
+
+Time step    0 at day 0/1500, date = 01-Jan-2017
+
+Adaptive time step (0), stepsize 33 days.
+well iterations = 1, non-linear iterations = 3, total linear iterations = 20
+Adaptive time step (1), stepsize 67 days.
+well iterations = 1, non-linear iterations = 7, total linear iterations = 39
+[34;1mWarning: Writing bubble points and dew points (PBPD) to file is unsupported, as the simulator does not use these internally.[0m
+[34;1mWarning: Keyword 'AQUCT' is unhandled for output to file.[0m
+[34;1mWarning: Keyword 'BASIC' is unhandled for output to file.[0m
+[34;1mWarning: Keyword 'CPU' is unhandled for output to file.[0m
+[34;1mWarning: Keyword 'DENG' is unhandled for output to file.[0m
+[34;1mWarning: Keyword 'DENO' is unhandled for output to file.[0m
+[34;1mWarning: Keyword 'DENW' is unhandled for output to file.[0m
+[34;1mWarning: Keyword 'DRAIN' is unhandled for output to file.[0m
+[34;1mWarning: Keyword 'FIP' is unhandled for output to file.[0m
+[34;1mWarning: Keyword 'FLOWS' is unhandled for output to file.[0m
+[34;1mWarning: Keyword 'FREQ' is unhandled for output to file.[0m
+[34;1mWarning: Message limit reached for message tag: Unhandled output keyword[0m
+
+Time step    1 at day 100/1500, date = 11-Apr-2017
+
+Adaptive time step (0), stepsize 100 days.
+ Oscillating behavior detected: Relaxation set to 0.900000
+non-linear iterations = 4, total linear iterations = 16
+[34;1mWarning: Writing bubble points and dew points (PBPD) to file is unsupported, as the simulator does not use these internally.[0m
+
+Time step    2 at day 200/1500, date = 20-Jul-2017
+
+Adaptive time step (0), stepsize 100 days.
+non-linear iterations = 3, total linear iterations = 11
+[34;1mWarning: Writing bubble points and dew points (PBPD) to file is unsupported, as the simulator does not use these internally.[0m
+
+Time step    3 at day 300/1500, date = 28-Oct-2017
+
+Adaptive time step (0), stepsize 100 days.
+non-linear iterations = 3, total linear iterations = 10
+[34;1mWarning: Writing bubble points and dew points (PBPD) to file is unsupported, as the simulator does not use these internally.[0m
+
+Time step    4 at day 400/1500, date = 05-Feb-2018
+
+Adaptive time step (0), stepsize 100 days.
+non-linear iterations = 2, total linear iterations = 7
+[34;1mWarning: Writing bubble points and dew points (PBPD) to file is unsupported, as the simulator does not use these internally.[0m
+
+Time step    5 at day 500/1500, date = 16-May-2018
+
+Adaptive time step (0), stepsize 100 days.
+non-linear iterations = 2, total linear iterations = 8
+[34;1mWarning: Writing bubble points and dew points (PBPD) to file is unsupported, as the simulator does not use these internally.[0m
+
+Time step    6 at day 600/1500, date = 24-Aug-2018
+
+Adaptive time step (0), stepsize 100 days.
+non-linear iterations = 2, total linear iterations = 7
+[34;1mWarning: Writing bubble points and dew points (PBPD) to file is unsupported, as the simulator does not use these internally.[0m
+
+Time step    7 at day 700/1500, date = 02-Dec-2018
+
+Adaptive time step (0), stepsize 100 days.
+non-linear iterations = 2, total linear iterations = 7
+[34;1mWarning: Writing bubble points and dew points (PBPD) to file is unsupported, as the simulator does not use these internally.[0m
+
+Time step    8 at day 800/1500, date = 12-Mar-2019
+
+Adaptive time step (0), stepsize 100 days.
+non-linear iterations = 2, total linear iterations = 7
+[34;1mWarning: Writing bubble points and dew points (PBPD) to file is unsupported, as the simulator does not use these internally.[0m
+
+Time step    9 at day 900/1500, date = 20-Jun-2019
+
+Adaptive time step (0), stepsize 100 days.
+non-linear iterations = 2, total linear iterations = 7
+[34;1mWarning: Writing bubble points and dew points (PBPD) to file is unsupported, as the simulator does not use these internally.[0m
+
+Time step   10 at day 1000/1500, date = 28-Sep-2019
+
+Adaptive time step (0), stepsize 100 days.
+non-linear iterations = 2, total linear iterations = 9
+[34;1mWarning: Message limit reached for message tag: Bubble/dew point pressure output unsupported[0m
+
+Time step   11 at day 1100/1500, date = 06-Jan-2020
+
+Adaptive time step (0), stepsize 100 days.
+non-linear iterations = 2, total linear iterations = 8
+
+Time step   12 at day 1200/1500, date = 15-Apr-2020
+
+Adaptive time step (0), stepsize 100 days.
+non-linear iterations = 2, total linear iterations = 8
+
+Time step   13 at day 1300/1500, date = 24-Jul-2020
+
+Adaptive time step (0), stepsize 100 days.
+non-linear iterations = 2, total linear iterations = 8
+
+Time step   14 at day 1400/1500, date = 01-Nov-2020
+
+Adaptive time step (0), stepsize 100 days.
+non-linear iterations = 1, total linear iterations = 2
+
+
+================    End of simulation     ===============
+
+Total time taken (seconds):  0.280961
+Solver time (seconds):       0.268753
+Overall Linearizations:      54
+Overall Newton Iterations:   38
+Overall Linear Iterations:   154
+

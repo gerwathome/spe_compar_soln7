@@ -1,0 +1,25 @@
+*** SPE7_1A.DATA	2017-03-10 10:16:54.966529188 -0600
+--- SPE7_1B.DATA	2017-03-11 14:38:38.873941935 -0600
+***************
+*** 364,373 ****
+    PROD   7  5   1   1   OPEN   1*     1*  0.375  1*  1*   1*   X  1* /
+    PROD   6  5   1   1   OPEN   1*     1*  0.375  1*  1*   1*   X  1* /
+  -- Uncomment I=2 through 5 for scenarios with 2100' well
+! --  PROD   5  5   1   1   OPEN   1*     1*  0.375  1*  1*   1*   X  1* /
+! --  PROD   4  5   1   1   OPEN   1*     1*  0.375  1*  1*   1*   X  1* /
+! --  PROD   3  5   1   1   OPEN   1*     1*  0.375  1*  1*   1*   X  1* /
+! --  PROD   2  5   1   1   OPEN   1*     1*  0.375  1*  1*   1*   X  1* /
+  -- Wnm* IC JC KTOP KBTM OPEN? SatTbl Trans  Dw   Kh   Skin DFac Dir r0
+    INJ    1  5   6   6   OPEN   1*     1*  0.375  21600 1*   1*   X  1* /
+    INJ    2  5   6   6   OPEN   1*     1*  0.375  21600 1*   1*   X  1* /
+--- 364,373 ----
+    PROD   7  5   1   1   OPEN   1*     1*  0.375  1*  1*   1*   X  1* /
+    PROD   6  5   1   1   OPEN   1*     1*  0.375  1*  1*   1*   X  1* /
+  -- Uncomment I=2 through 5 for scenarios with 2100' well
+!   PROD   5  5   1   1   OPEN   1*     1*  0.375  1*  1*   1*   X  1* /
+!   PROD   4  5   1   1   OPEN   1*     1*  0.375  1*  1*   1*   X  1* /
+!   PROD   3  5   1   1   OPEN   1*     1*  0.375  1*  1*   1*   X  1* /
+!   PROD   2  5   1   1   OPEN   1*     1*  0.375  1*  1*   1*   X  1* /
+  -- Wnm* IC JC KTOP KBTM OPEN? SatTbl Trans  Dw   Kh   Skin DFac Dir r0
+    INJ    1  5   6   6   OPEN   1*     1*  0.375  21600 1*   1*   X  1* /
+    INJ    2  5   6   6   OPEN   1*     1*  0.375  21600 1*   1*   X  1* /

@@ -1,0 +1,11 @@
+Case,Horzontal—Producer,Liquid Production,Water Injection
+,Length,Rate,Scheme
+_,(ft),(stb/day),
+la,900,3000,p = 3700 psia
+1b,2100,3000,p = 3700 psia
+2a,900,6000,p = 3700 psia
+2b,2100,6000,p = 3700 psia
+3a,900,9000,p z 3700 psia
+3b,2100,9000,p = 3700 psia
+4a,900,9000,qw = 6000 sxb/day
+4b,2100,9000,qw = 6000 stb/day

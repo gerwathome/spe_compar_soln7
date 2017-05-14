@@ -1,0 +1,913 @@
+
+---------------    Reading parameters     ---------------
+
+gravity not found. Using default value '9.80665'.
+use_local_perm not found. Using default value 'true'.
+
+***************Saturation Functions Diagnostics***************
+System:  Black-oil system.
+Relative permeability input format: Saturation Family I.
+Number of saturation regions: 1
+
+threephase_model not found. Using default value 'gwseg'.
+output not found. Using default value 'true'.
+output_ecl not found. Using default value 'true'.
+output not found. Using default value 'true'.
+output_dir found at /, value is './sim_output/SPE7_1B'.
+output_interval not found. Using default value '1'.
+output_vtk not found. Using default value 'false'.
+output_matlab not found. Using default value 'false'.
+output_ecl not found. Using default value 'true'.
+async_output not found. Using default value 'false'.
+backupfile not found. Using default value ''.
+solver_approach not found. Using default value 'interleaved'.
+newton_use_gmres not found. Using default value 'false'.
+linear_solver_reduction not found. Using default value '0.01'.
+linear_solver_maxiter not found. Using default value '75'.
+linear_solver_restart not found. Using default value '40'.
+linear_solver_verbosity not found. Using default value '0'.
+require_full_sparsity_pattern not found. Using default value 'false'.
+linear_solver_ignoreconvergencefailure not found. Using default value 'false'.
+dp_max_rel not found. Using default value '1e+09'.
+ds_max not found. Using default value '0.2'.
+dr_max_rel not found. Using default value '1e+09'.
+max_residual_allowed not found. Using default value '1e+07'.
+tolerance_mb not found. Using default value '1e-05'.
+tolerance_cnv not found. Using default value '0.01'.
+tolerance_wells not found. Using default value '0.001'.
+solve_welleq_initially not found. Using default value 'true'.
+update_equations_scaling not found. Using default value 'false'.
+compute_well_potentials not found. Using default value 'false'.
+use_update_stabilization not found. Using default value 'true'.
+relax_max not found. Using default value '0.5'.
+max_iter not found. Using default value '15'.
+min_iter not found. Using default value '1'.
+relax_type not found. Using default value 'dampen'.
+output_terminal not found. Using default value 'true'.
+
+
+================ Starting main simulation loop ===============
+
+timestep.adaptive not found. Using default value 'true'.
+use_TUNING not found. Using default value 'false'.
+solver.restartfactor not found. Using default value '0.33'.
+solver.growthfactor not found. Using default value '2'.
+timestep.control.maxgrowth not found. Using default value '3'.
+timestep.max_timestep_in_days not found. Using default value '365'.
+solver.restart not found. Using default value '10'.
+solver.verbose not found. Using default value 'true'.
+timestep.verbose not found. Using default value 'true'.
+full_timestep_initially not found. Using default value 'false'.
+timestep.control not found. Using default value 'pid'.
+timestep.control.tol not found. Using default value '0.1'.
+restorefile not found. Using default value ''.
+compute_well_potentials not found. Using default value 'false'.
+
+
+---------------    Simulation step number 0    ---------------
+      Current time (days)     0
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+
+
+Time step    0 at day 0/1500, date = 01-Jan-2017
+
+Adaptive time step (0), stepsize 33 days.
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  8.092e-02  1.864e-02  2.005e-02
+   1  4.215e-19  8.670e-18  6.448e-18
+well converged iter: 1
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  3.860e-02  2.595e-03  2.100e-03  5.565e+00  1.201e+00  9.719e-01  8.625e-03  8.670e-18  6.448e-18
+   1  3.486e-04  1.339e-03  1.067e-03  1.584e-01  6.026e-02  4.774e-02  2.155e-05  1.960e-05  1.560e-05
+   2  6.237e-05  1.429e-04  1.134e-04  2.701e-03  4.985e-03  3.959e-03  3.082e-06  2.670e-05  2.116e-05
+   3  4.271e-07  6.527e-07  5.185e-07  6.401e-05  1.054e-04  8.365e-05  2.464e-08  2.141e-07  1.697e-07
+Overall linear iterations used: 17
+well iterations = 1, non-linear iterations = 3, total linear iterations = 17
+Adaptive time step (1), stepsize 67 days.
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  7.049e-07  2.141e-07  1.697e-07
+well converged iter: 0
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  6.795e-03  5.160e-03  4.091e-03  1.065e-01  1.048e-01  8.343e-02  7.049e-07  2.141e-07  1.697e-07
+   1  5.935e-05  5.199e-04  4.122e-04  2.812e-02  2.240e-01  1.776e-01  6.796e-05  5.894e-04  4.670e-04
+   2  9.555e-06  8.794e-07  6.963e-07  5.359e-03  3.470e-02  2.756e-02  1.569e-06  1.361e-05  1.079e-05
+   3  1.164e-06  1.895e-06  1.503e-06  1.169e-04  5.490e-04  4.361e-04  1.121e-10  9.558e-10  7.526e-10
+Overall linear iterations used: 13
+well iterations = 1, non-linear iterations = 6, total linear iterations = 30
+Sub steps started at time = 0 (days)
+ step[ 0 ] = 33 (days)
+ step[ 1 ] = 67 (days)
+sub steps end time = 100 (days)
+Suggested next step size = 201 (days)
+
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       255.387  PSIA                 :
+                                                  :      PORV =       6605754   RB                  :
+                                                  : Pressure is weighted by hydrocarbon pore voulme :
+                                                  : Pore volumes are taken at reference conditions  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      15809274             0      15809274:     23954581   :             0      22047030      22047030:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       3704.08  PSIA                 :
+                                                  :      PORV =      41548942   RB                  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      15809274             0      15809274:     23954581   :             0      22047030      22047030:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+Fully implicit solver took: 0.063524 seconds. Total solver time taken: 0.063524 seconds.
+Keyword 'BASIC' is unhandled for output to file.
+
+
+---------------    Simulation step number 1    ---------------
+      Current time (days)     100
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+
+
+Time step    1 at day 100/1500, date = 11-Apr-2017
+
+Adaptive time step (0), stepsize 100 days.
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  1.121e-10  9.558e-10  7.526e-10
+well converged iter: 0
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  7.261e-03  7.187e-03  5.693e-03  8.893e-02  8.895e-02  7.076e-02  1.121e-10  9.558e-10  7.526e-10
+   1  1.899e-04  3.948e-04  3.123e-04  3.180e-02  5.492e-01  4.352e-01  1.356e-04  2.751e-04  2.178e-04
+   2  7.067e-06  9.438e-06  7.476e-06  1.104e-02  2.429e-01  1.924e-01  2.116e-06  7.358e-06  5.824e-06
+ Oscillating behavior detected: Relaxation set to 0.900000
+   3  1.517e-06  6.137e-07  4.885e-07  2.366e-03  2.794e-02  2.213e-02  1.969e-07  6.848e-07  5.419e-07
+   4  6.645e-07  3.645e-07  2.891e-07  2.709e-04  2.878e-03  2.280e-03  1.932e-08  6.720e-08  5.318e-08
+Overall linear iterations used: 12
+non-linear iterations = 4, total linear iterations = 12
+Sub steps started at time = 100 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 200 (days)
+Suggested next step size = 300 (days)
+
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       255.407  PSIA                 :
+                                                  :      PORV =       6605754   RB                  :
+                                                  : Pressure is weighted by hydrocarbon pore voulme :
+                                                  : Pore volumes are taken at reference conditions  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      15578824             0      15578824:     24209514   :             0      21726369      21726369:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       3704.37  PSIA                 :
+                                                  :      PORV =      41548942   RB                  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      15578824             0      15578824:     24209514   :             0      21726369      21726369:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+Fully implicit solver took: 0.032543 seconds. Total solver time taken: 0.096067 seconds.
+Keyword 'BASIC' is unhandled for output to file.
+
+
+---------------    Simulation step number 2    ---------------
+      Current time (days)     200
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+
+
+Time step    2 at day 200/1500, date = 20-Jul-2017
+
+Adaptive time step (0), stepsize 100 days.
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  1.932e-08  6.720e-08  5.318e-08
+well converged iter: 0
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  6.155e-03  6.158e-03  4.879e-03  6.262e-02  6.271e-02  4.976e-02  1.932e-08  6.720e-08  5.318e-08
+   1  9.712e-05  2.931e-04  2.326e-04  2.039e-02  4.158e-01  3.295e-01  6.604e-05  2.297e-04  1.821e-04
+   2  2.737e-06  8.605e-06  6.819e-06  2.659e-03  1.764e-02  1.400e-02  3.802e-07  1.324e-06  1.051e-06
+   3  2.107e-06  3.238e-06  2.568e-06  4.931e-05  2.010e-04  1.595e-04  1.743e-09  6.062e-09  4.798e-09
+Overall linear iterations used: 8
+non-linear iterations = 3, total linear iterations = 8
+Sub steps started at time = 200 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 300 (days)
+Suggested next step size = 300 (days)
+
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       255.421  PSIA                 :
+                                                  :      PORV =       6605754   RB                  :
+                                                  : Pressure is weighted by hydrocarbon pore voulme :
+                                                  : Pore volumes are taken at reference conditions  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      15383591             0      15383591:     24425469   :             0      21454671      21454671:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       3704.57  PSIA                 :
+                                                  :      PORV =      41548942   RB                  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      15383591             0      15383591:     24425469   :             0      21454671      21454671:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+Fully implicit solver took: 0.023977 seconds. Total solver time taken: 0.120044 seconds.
+Keyword 'BASIC' is unhandled for output to file.
+
+
+---------------    Simulation step number 3    ---------------
+      Current time (days)     300
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+
+
+Time step    3 at day 300/1500, date = 28-Oct-2017
+
+Adaptive time step (0), stepsize 100 days.
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  1.743e-09  6.062e-09  4.798e-09
+well converged iter: 0
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  5.216e-03  5.214e-03  4.132e-03  4.612e-02  4.614e-02  3.662e-02  1.743e-09  6.062e-09  4.798e-09
+   1  2.649e-05  1.745e-04  1.385e-04  1.206e-02  5.941e-02  4.714e-02  3.743e-05  1.302e-04  1.032e-04
+   2  1.418e-05  7.988e-06  6.333e-06  2.021e-03  1.732e-03  1.374e-03  4.139e-08  1.432e-07  1.116e-07
+   3  1.599e-11  2.029e-07  1.609e-07  6.209e-06  6.583e-06  5.213e-06  5.419e-10  1.885e-09  1.494e-09
+Overall linear iterations used: 12
+non-linear iterations = 3, total linear iterations = 12
+Sub steps started at time = 300 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 400 (days)
+Suggested next step size = 300 (days)
+
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       255.439  PSIA                 :
+                                                  :      PORV =       6605754   RB                  :
+                                                  : Pressure is weighted by hydrocarbon pore voulme :
+                                                  : Pore volumes are taken at reference conditions  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      15217522             0      15217522:     24609196   :             0      21223531      21223531:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       3704.82  PSIA                 :
+                                                  :      PORV =      41548942   RB                  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      15217522             0      15217522:     24609196   :             0      21223531      21223531:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+Fully implicit solver took: 0.023193 seconds. Total solver time taken: 0.143237 seconds.
+Keyword 'BASIC' is unhandled for output to file.
+
+
+---------------    Simulation step number 4    ---------------
+      Current time (days)     400
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+
+
+Time step    4 at day 400/1500, date = 05-Feb-2018
+
+Adaptive time step (0), stepsize 100 days.
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  5.419e-10  1.885e-09  1.494e-09
+well converged iter: 0
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  4.436e-03  4.438e-03  3.517e-03  3.540e-02  3.544e-02  2.808e-02  5.419e-10  1.885e-09  1.494e-09
+   1  9.832e-06  1.016e-04  8.066e-05  6.370e-03  2.730e-02  2.164e-02  1.854e-05  6.450e-05  5.115e-05
+   2  4.079e-06  3.559e-06  2.823e-06  5.520e-05  1.462e-04  1.158e-04  1.603e-08  5.572e-08  4.430e-08
+Overall linear iterations used: 9
+non-linear iterations = 2, total linear iterations = 9
+Sub steps started at time = 400 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 500 (days)
+Suggested next step size = 300 (days)
+
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       255.451  PSIA                 :
+                                                  :      PORV =       6605754   RB                  :
+                                                  : Pressure is weighted by hydrocarbon pore voulme :
+                                                  : Pore volumes are taken at reference conditions  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      15074302             0      15074302:     24767632   :             0      21024177      21024177:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       3705.01  PSIA                 :
+                                                  :      PORV =      41548942   RB                  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      15074302             0      15074302:     24767632   :             0      21024177      21024177:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+Fully implicit solver took: 0.016232 seconds. Total solver time taken: 0.159469 seconds.
+Keyword 'BASIC' is unhandled for output to file.
+
+
+---------------    Simulation step number 5    ---------------
+      Current time (days)     500
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+
+
+Time step    5 at day 500/1500, date = 16-May-2018
+
+Adaptive time step (0), stepsize 100 days.
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  1.603e-08  5.572e-08  4.430e-08
+well converged iter: 0
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  3.829e-03  3.824e-03  3.031e-03  2.872e-02  2.875e-02  2.278e-02  1.603e-08  5.572e-08  4.430e-08
+   1  9.486e-06  2.090e-04  1.656e-04  7.330e-03  1.772e-01  1.405e-01  1.900e-05  1.717e-04  1.361e-04
+   2  6.888e-06  4.432e-06  3.513e-06  5.432e-03  3.628e-03  2.875e-03  5.386e-06  3.330e-06  2.639e-06
+Overall linear iterations used: 10
+non-linear iterations = 2, total linear iterations = 10
+Sub steps started at time = 500 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 600 (days)
+Suggested next step size = 300 (days)
+
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       255.463  PSIA                 :
+                                                  :      PORV =       6605754   RB                  :
+                                                  : Pressure is weighted by hydrocarbon pore voulme :
+                                                  : Pore volumes are taken at reference conditions  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      14948696             0      14948696:     24906588   :             0      20849333      20849333:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       3705.18  PSIA                 :
+                                                  :      PORV =      41548942   RB                  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      14948696             0      14948696:     24906588   :             0      20849333      20849333:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+Fully implicit solver took: 0.016496 seconds. Total solver time taken: 0.175965 seconds.
+Keyword 'BASIC' is unhandled for output to file.
+
+
+---------------    Simulation step number 6    ---------------
+      Current time (days)     600
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+
+
+Time step    6 at day 600/1500, date = 24-Aug-2018
+
+Adaptive time step (0), stepsize 100 days.
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  5.386e-06  3.330e-06  2.639e-06
+well converged iter: 0
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  3.362e-03  3.361e-03  2.664e-03  2.440e-02  2.443e-02  1.936e-02  5.386e-06  3.330e-06  2.639e-06
+   1  1.020e-05  1.285e-06  9.463e-07  7.528e-03  2.385e-02  1.890e-02  1.854e-06  1.303e-05  1.032e-05
+   2  1.301e-07  5.063e-07  4.015e-07  6.106e-05  3.890e-05  3.083e-05  2.448e-08  1.654e-08  1.311e-08
+Overall linear iterations used: 9
+non-linear iterations = 2, total linear iterations = 9
+Sub steps started at time = 600 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 700 (days)
+Suggested next step size = 300 (days)
+
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       255.471  PSIA                 :
+                                                  :      PORV =       6605754   RB                  :
+                                                  : Pressure is weighted by hydrocarbon pore voulme :
+                                                  : Pore volumes are taken at reference conditions  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      14837073             0      14837073:     25030064   :             0      20693949      20693949:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =        3705.3  PSIA                 :
+                                                  :      PORV =      41548942   RB                  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      14837073             0      14837073:     25030064   :             0      20693949      20693949:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+Fully implicit solver took: 0.015102 seconds. Total solver time taken: 0.191067 seconds.
+Keyword 'BASIC' is unhandled for output to file.
+
+
+---------------    Simulation step number 7    ---------------
+      Current time (days)     700
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+
+
+Time step    7 at day 700/1500, date = 02-Dec-2018
+
+Adaptive time step (0), stepsize 100 days.
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  2.448e-08  1.654e-08  1.311e-08
+well converged iter: 0
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  2.981e-03  2.983e-03  2.364e-03  2.005e-02  2.007e-02  1.591e-02  2.448e-08  1.654e-08  1.311e-08
+   1  1.588e-05  7.846e-06  6.271e-06  6.546e-03  6.892e-03  5.463e-03  5.155e-06  3.483e-06  2.757e-06
+   2  9.117e-07  1.294e-06  1.026e-06  1.461e-05  1.094e-05  8.669e-06  2.184e-10  1.484e-10  1.171e-10
+Overall linear iterations used: 8
+non-linear iterations = 2, total linear iterations = 8
+Sub steps started at time = 700 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 800 (days)
+Suggested next step size = 300 (days)
+
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       255.478  PSIA                 :
+                                                  :      PORV =       6605754   RB                  :
+                                                  : Pressure is weighted by hydrocarbon pore voulme :
+                                                  : Pore volumes are taken at reference conditions  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      14736447             0      14736447:     25141370   :             0      20553869      20553869:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       3705.39  PSIA                 :
+                                                  :      PORV =      41548942   RB                  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      14736447             0      14736447:     25141370   :             0      20553869      20553869:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+Fully implicit solver took: 0.015043 seconds. Total solver time taken: 0.206110 seconds.
+Keyword 'BASIC' is unhandled for output to file.
+
+
+---------------    Simulation step number 8    ---------------
+      Current time (days)     800
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+
+
+Time step    8 at day 800/1500, date = 12-Mar-2019
+
+Adaptive time step (0), stepsize 100 days.
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  2.184e-10  1.484e-10  1.171e-10
+well converged iter: 0
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  2.688e-03  2.688e-03  2.130e-03  1.665e-02  1.666e-02  1.320e-02  2.184e-10  1.484e-10  1.171e-10
+   1  1.638e-05  9.954e-06  7.932e-06  4.627e-03  5.555e-02  4.402e-02  3.159e-06  2.134e-06  1.689e-06
+   2  3.644e-06  1.048e-06  8.315e-07  2.881e-04  2.761e-04  2.188e-04  4.718e-08  3.189e-08  2.524e-08
+Overall linear iterations used: 6
+non-linear iterations = 2, total linear iterations = 6
+Sub steps started at time = 800 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 900 (days)
+Suggested next step size = 300 (days)
+
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       255.483  PSIA                 :
+                                                  :      PORV =       6605754   RB                  :
+                                                  : Pressure is weighted by hydrocarbon pore voulme :
+                                                  : Pore volumes are taken at reference conditions  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      14643816             0      14643816:     25243826   :             0      20424919      20424919:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       3705.47  PSIA                 :
+                                                  :      PORV =      41548942   RB                  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      14643816             0      14643816:     25243826   :             0      20424919      20424919:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+Fully implicit solver took: 0.014383 seconds. Total solver time taken: 0.220493 seconds.
+Keyword 'BASIC' is unhandled for output to file.
+
+
+---------------    Simulation step number 9    ---------------
+      Current time (days)     900
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+
+
+Time step    9 at day 900/1500, date = 20-Jun-2019
+
+Adaptive time step (0), stepsize 100 days.
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  4.718e-08  3.189e-08  2.524e-08
+well converged iter: 0
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  2.477e-03  2.475e-03  1.961e-03  1.577e-02  1.580e-02  1.252e-02  4.718e-08  3.189e-08  2.524e-08
+   1  1.927e-05  6.734e-06  5.373e-06  3.045e-03  3.217e-03  2.550e-03  2.184e-06  1.475e-06  1.168e-06
+   2  1.538e-07  5.357e-07  4.248e-07  6.189e-05  2.407e-05  1.908e-05  1.461e-10  9.893e-11  7.820e-11
+Overall linear iterations used: 6
+non-linear iterations = 2, total linear iterations = 6
+Sub steps started at time = 900 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 1000 (days)
+Suggested next step size = 300 (days)
+
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       255.488  PSIA                 :
+                                                  :      PORV =       6605754   RB                  :
+                                                  : Pressure is weighted by hydrocarbon pore voulme :
+                                                  : Pore volumes are taken at reference conditions  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      14558019             0      14558019:     25338728   :             0      20305479      20305479:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       3705.54  PSIA                 :
+                                                  :      PORV =      41548942   RB                  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      14558019             0      14558019:     25338728   :             0      20305479      20305479:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+Fully implicit solver took: 0.014473 seconds. Total solver time taken: 0.234966 seconds.
+Keyword 'BASIC' is unhandled for output to file.
+
+
+---------------    Simulation step number 10    ---------------
+      Current time (days)     1000
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+
+
+Time step   10 at day 1000/1500, date = 28-Sep-2019
+
+Adaptive time step (0), stepsize 100 days.
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  1.461e-10  9.893e-11  7.820e-11
+well converged iter: 0
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  2.291e-03  2.294e-03  1.818e-03  1.473e-02  1.478e-02  1.171e-02  1.461e-10  9.893e-11  7.820e-11
+   1  1.460e-05  5.216e-06  4.163e-06  2.931e-03  2.109e-02  1.671e-02  1.675e-06  1.131e-06  8.957e-07
+   2  4.783e-07  3.472e-07  2.753e-07  1.006e-04  3.788e-05  3.001e-05  5.475e-09  3.701e-09  2.930e-09
+Overall linear iterations used: 6
+non-linear iterations = 2, total linear iterations = 6
+Sub steps started at time = 1000 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 1100 (days)
+Suggested next step size = 300 (days)
+
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       255.492  PSIA                 :
+                                                  :      PORV =       6605754   RB                  :
+                                                  : Pressure is weighted by hydrocarbon pore voulme :
+                                                  : Pore volumes are taken at reference conditions  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      14477989             0      14477989:     25427244   :             0      20194067      20194067:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       3705.59  PSIA                 :
+                                                  :      PORV =      41548942   RB                  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      14477989             0      14477989:     25427244   :             0      20194067      20194067:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+Fully implicit solver took: 0.015856 seconds. Total solver time taken: 0.250822 seconds.
+Keyword 'BASIC' is unhandled for output to file.
+
+
+---------------    Simulation step number 11    ---------------
+      Current time (days)     1100
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+
+
+Time step   11 at day 1100/1500, date = 06-Jan-2020
+
+Adaptive time step (0), stepsize 100 days.
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  5.475e-09  3.701e-09  2.930e-09
+well converged iter: 0
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  2.136e-03  2.138e-03  1.695e-03  1.369e-02  1.370e-02  1.086e-02  5.475e-09  3.701e-09  2.930e-09
+   1  1.341e-05  5.476e-06  4.365e-06  1.161e-03  6.475e-04  5.135e-04  1.145e-06  7.737e-07  6.125e-07
+   2  1.165e-07  7.546e-08  5.983e-08  9.095e-06  2.946e-06  2.335e-06  2.269e-11  1.538e-11  1.215e-11
+Overall linear iterations used: 7
+non-linear iterations = 2, total linear iterations = 7
+Sub steps started at time = 1100 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 1200 (days)
+Suggested next step size = 300 (days)
+
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       255.495  PSIA                 :
+                                                  :      PORV =       6605754   RB                  :
+                                                  : Pressure is weighted by hydrocarbon pore voulme :
+                                                  : Pore volumes are taken at reference conditions  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      14402883             0      14402883:     25510313   :             0      20089511      20089511:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       3705.64  PSIA                 :
+                                                  :      PORV =      41548942   RB                  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      14402883             0      14402883:     25510313   :             0      20089511      20089511:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+Fully implicit solver took: 0.015309 seconds. Total solver time taken: 0.266131 seconds.
+Keyword 'BASIC' is unhandled for output to file.
+
+
+---------------    Simulation step number 12    ---------------
+      Current time (days)     1200
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+
+
+Time step   12 at day 1200/1500, date = 15-Apr-2020
+
+Adaptive time step (0), stepsize 100 days.
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  2.269e-11  1.538e-11  1.215e-11
+well converged iter: 0
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  2.005e-03  2.007e-03  1.591e-03  1.273e-02  1.274e-02  1.010e-02  2.269e-11  1.538e-11  1.215e-11
+   1  1.284e-05  5.029e-06  4.007e-06  1.777e-03  3.482e-04  2.759e-04  9.394e-07  6.346e-07  5.024e-07
+   2  6.537e-08  1.875e-07  1.487e-07  2.274e-05  4.032e-06  3.196e-06  1.410e-11  9.583e-12  7.578e-12
+Overall linear iterations used: 6
+non-linear iterations = 2, total linear iterations = 6
+Sub steps started at time = 1200 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 1300 (days)
+Suggested next step size = 300 (days)
+
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       255.498  PSIA                 :
+                                                  :      PORV =       6605754   RB                  :
+                                                  : Pressure is weighted by hydrocarbon pore voulme :
+                                                  : Pore volumes are taken at reference conditions  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      14332184             0      14332184:     25588508   :             0      19991087      19991087:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       3705.69  PSIA                 :
+                                                  :      PORV =      41548942   RB                  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      14332184             0      14332184:     25588508   :             0      19991087      19991087:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+Fully implicit solver took: 0.015520 seconds. Total solver time taken: 0.281651 seconds.
+Keyword 'BASIC' is unhandled for output to file.
+
+
+---------------    Simulation step number 13    ---------------
+      Current time (days)     1300
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+
+
+Time step   13 at day 1300/1500, date = 24-Jul-2020
+
+Adaptive time step (0), stepsize 100 days.
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  1.410e-11  9.583e-12  7.578e-12
+well converged iter: 0
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  1.888e-03  1.889e-03  1.497e-03  1.159e-02  1.160e-02  9.197e-03  1.410e-11  9.583e-12  7.578e-12
+   1  1.233e-05  4.824e-06  3.843e-06  1.163e-03  3.067e-04  2.430e-04  7.612e-07  5.142e-07  4.071e-07
+   2  1.529e-08  4.213e-08  3.347e-08  1.882e-06  1.209e-06  9.576e-07  4.445e-12  3.051e-12  2.400e-12
+Overall linear iterations used: 7
+non-linear iterations = 2, total linear iterations = 7
+Sub steps started at time = 1300 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 1400 (days)
+Suggested next step size = 300 (days)
+
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       255.501  PSIA                 :
+                                                  :      PORV =       6605754   RB                  :
+                                                  : Pressure is weighted by hydrocarbon pore voulme :
+                                                  : Pore volumes are taken at reference conditions  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      14265428             0      14265428:     25662342   :             0      19898152      19898152:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       3705.73  PSIA                 :
+                                                  :      PORV =      41548942   RB                  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      14265428             0      14265428:     25662342   :             0      19898152      19898152:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+Fully implicit solver took: 0.015130 seconds. Total solver time taken: 0.296781 seconds.
+Keyword 'BASIC' is unhandled for output to file.
+
+
+---------------    Simulation step number 14    ---------------
+      Current time (days)     1400
+      Current stepsize (days) 100
+      Total time (days)       1500
+
+
+
+Time step   14 at day 1400/1500, date = 01-Nov-2020
+
+Adaptive time step (0), stepsize 100 days.
+Iter  W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  4.445e-12  3.051e-12  2.400e-12
+well converged iter: 0
+Iter   MB(Wat)    MB(Oil)    MB(Gas)     CNV(W)     CNV(O)     CNV(G)   W-FLUX(W)  W-FLUX(O)  W-FLUX(G)
+   0  1.783e-03  1.784e-03  1.414e-03  1.055e-02  1.056e-02  8.369e-03  4.445e-12  3.051e-12  2.400e-12
+   1  1.141e-05  4.356e-06  3.469e-06  1.086e-03  2.685e-04  2.127e-04  6.146e-07  4.152e-07  3.287e-07
+   2  1.979e-08  3.591e-08  2.854e-08  1.579e-06  1.251e-06  9.912e-07  1.579e-12  1.105e-12  8.652e-13
+Overall linear iterations used: 7
+non-linear iterations = 2, total linear iterations = 7
+Sub steps started at time = 1400 (days)
+ step[ 0 ] = 100 (days)
+sub steps end time = 1500 (days)
+Suggested next step size = 300 (days)
+
+                                                  ===================================================
+                                                  :                   Field Totals                  :
+                                                  :      PAV  =       255.504  PSIA                 :
+                                                  :      PORV =       6605754   RB                  :
+                                                  : Pressure is weighted by hydrocarbon pore voulme :
+                                                  : Pore volumes are taken at reference conditions  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      14202182             0      14202182:     25732293   :             0      19810103      19810103:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+                                                  ===================================================
+                                                  :        FIPNUM report region   1                 :
+                                                  :      PAV  =       3705.77  PSIA                 :
+                                                  :      PORV =      41548942   RB                  :
+                         :--------------- Oil    STB ---------------:-- Wat    STB --:--------------- Gas   MSCF ---------------:
+                         :      Liquid        Vapour        Total   :      Total     :      Free        Dissolved       Total   :
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Currently   in place    :      14202182             0      14202182:     25732293   :             0      19810103      19810103:
+:------------------------:------------------------------------------:----------------:------------------------------------------:
+:Originally  in place    :      16084601             0      16084601:     23614487   :             0      22429989      22429989:
+:========================:==========================================:================:==========================================:
+
+Fully implicit solver took: 0.014994 seconds. Total solver time taken: 0.311775 seconds.
+Keyword 'BASIC' is unhandled for output to file.
+
+
+================    End of simulation     ===============
+
+Total time taken (seconds):  0.321241
+Solver time (seconds):       0.311775
+Overall Linearizations:      54
+Overall Newton Iterations:   38
+Overall Linear Iterations:   143
+
+
+
+Error summary:
+Warnings          15
+Info              54
+Errors            0
+Bugs              0
+Debug             52
+Problems          0
+
