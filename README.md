@@ -1,6 +1,6 @@
 # spe_compar_soln7
 
-This project is a learning exercise for myself.  The plan is:
+This project is put on hold for a while, as what I really wanted to do was build an LGR in ***flow***, but that functionality is not yet supported.  It is a learning exercise for myself.  The plan is:
 
 1. Download SPE21221.  This is the simulation comparative solution project number 7, which deals with modeling horizontal wells.
 2. Use tesseract-ocr / manual editing to digitize the tables
